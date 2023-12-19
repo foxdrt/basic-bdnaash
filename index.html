@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bar {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .Search {
+        width: 25vw;
+        height: 5vh;
+        padding: 5px 10vw 5px 10px;
+        border-radius: 6px;
+        border: rgba(0, 0, 0, 0.762) solid 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vw;
+      }
+      .hidden {
+        display: none;
+      }
+      .overFlow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.313);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(3px);
+      }
+      .window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(222, 222, 222);
+        width: 18vw;
+        height: 18vw;
+        border-radius: 5px;
+      }
+      .okay {
+        border: solid rgb(0, 183, 0) 2px;
+      }
+      .notokay {
+        border: solid rgb(183, 67, 0) 2px;
+      }
+      #h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 18px;
+      }
+      #p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 3px;
+      }
+      .BtnX {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+        color: black;
+        font-size: larger;
+        right: 5px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <input placeholder="Search" class="Search" />
+    </div>
+    <div class="overFlow hidden"></div>
+    <div class="window hidden">
+      <h1 id="h1">boycott</h1>
+      <h3 id="p">X</h3>
+      <button class="BtnX">X</button>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
